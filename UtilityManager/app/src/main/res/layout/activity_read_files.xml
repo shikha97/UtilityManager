@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_read_file"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.utilitymanager.ReadFiles">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/back"
+        android:text="The contents will be displayed here."
+        android:textSize="20sp"
+        android:id="@+id/display"
+        android:layout_below="@+id/b1" />
+    <Button
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b2"
+        android:text="Clear"
+        android:onClick="clear"
+        android:background="@color/back"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:text="Open File"
+        android:onClick="open"
+        android:background="@color/back"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_alignBaseline="@+id/b2"
+        android:layout_alignBottom="@+id/b2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+</RelativeLayout>
